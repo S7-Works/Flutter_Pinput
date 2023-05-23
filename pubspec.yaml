@@ -1,9 +1,12 @@
 name: pinput
 version: 2.2.23
+
 description: Pin code input (OTP) text field, iOS SMS autofill, Android SMS autofill One Time Code, Password, Passcode, Captcha, Security, Coupon, Wowcher, 2FA, Two step verification
 homepage: https://github.com/Tkko/Flutter_PinPut
 repository: https://github.com/Tkko/Flutter_PinPut
 issue_tracker: https://github.com/Tkko/Flutter_Pinput/issues
+# this one has to be removed if someday its desided to be published
+publish_to: none
 screenshots:
   - description: 'Pin input example'
     path: example/pinput_demo_1.webp
@@ -22,7 +25,12 @@ dependencies:
     sdk: flutter
   smart_auth: ^1.0.8
   universal_platform: ^1.0.0+1
-  flutter_neumorphic:
+  flutter_neumorphic: 
+      git:
+        url: https://github.com/S7-Works/Flutter-Neumorphic.git
+        ref: update
+
+ 
 
 dev_dependencies:
   flutter_test:
